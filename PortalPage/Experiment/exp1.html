@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+    <h2>Right click and press Inspect -> Console to open the JS console. </h2>
+    <script>
+        let mySentence = "the cat is out of the bag."
+        let sentence = "";
+        let capitalize = true;
+
+        for (let i = 0; i < mySentence.length; i++) {
+            let char = mySentence[i];
+            if (char == " ") {
+                sentence = sentence + char; 
+                capitalize = true;
+                console.log(sentence);
+            } else if (capitalize) {
+                sentence = sentence + char.toUpperCase();
+                capitalize = false;
+                console.log(sentence);
+            } else {
+                sentence = sentence + char;
+                console.log(sentence);
+            }
+        }
+        
+        // index - have the function jump a letter to apply uppercase
+    //    for a<12
+    //     a = 0
+    //     makeletter(a)toUpperCase
+    //     a = a+2
+
+
+  
+
+    </script>
+    
+</body>
+</html>
