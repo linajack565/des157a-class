@@ -3,37 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiment 1</title>
+    <title>Experiment 2</title>
+    <style>
+		.red { background-color: #FD3C2F; }
+        .orange { background-color: #FC9E25; }
+        .yellow { background-color: #FAFF90; }
+        .green { background-color: #3B8C33; }
+        .blue { background-color: #2D3AC9; }
+        .purple { background-color: #B041FD; }
+    </style>
 </head>
 <body>
-    <h1>Experiment 1</h1>
-    <h2>Right click and press Inspect -> Console to open the JS console. </h2>
+    
+    <h1>Experiment 2</h1>
     <script>
-        let mySentence = "the cat is out of the bag."
-        let sentence = "";
-        let capitalize = true;
-
-        for (let i = 0; i < mySentence.length; i++) {
-            let char = mySentence[i];
-            if (char == " ") {
-                sentence = sentence + char; 
-                capitalize = true;
-                console.log(sentence);
-            } else if (capitalize) {
-                sentence = sentence + char.toUpperCase();
-                capitalize = false;
-                console.log(sentence);
-            } else {
-                sentence = sentence + char;
-                console.log(sentence);
-            }
+        var selectedColor = prompt("Enter a color (red, orange, yellow, green, blue, purple).", "");
+        if(selectedColor === "red") {
+            var heading = document.querySelector('body');
+		    heading.className = "red";
+        } else if(selectedColor === "orange") {
+            var heading = document.querySelector('body');
+		    heading.className = "orange";
+        } else if (selectedColor === "yellow"){
+            var heading = document.querySelector('body');
+		    heading.className = "yellow";
+        } else if (selectedColor === "green"){
+            var heading = document.querySelector('body');
+		    heading.className = "green";
+        } else if (selectedColor === "blue"){
+            var heading = document.querySelector('body');
+		    heading.className = "blue";
+        } else if (selectedColor === "purple"){
+            var heading = document.querySelector('body');
+		    heading.className = "purple";
+        } else {
+            console.log("You didn't enter a primary or secondary color.")
         }
-        
-        // index - have the function jump a letter to apply uppercase
-    //    for a<12
-    //     a = 0
-    //     makeletter(a)toUpperCase
-    //     a = a+2
 
 
   
