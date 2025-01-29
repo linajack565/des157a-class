@@ -12,8 +12,17 @@ header {
     color: #2F4E4E;
     margin: auto;
 }
+h2 {
+    margin: 10px;
+}
+
 .cardp {
     color: #FEF7EC;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    
+
 }
 p {
     text-decoration: none;
@@ -67,6 +76,7 @@ section {
     text-align: center;
     width: 50%;
     border-radius: 5px;
+    
 }
 
 a {
