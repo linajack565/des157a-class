@@ -1,0 +1,152 @@
+
+header {
+    width: 1200px;
+    /* height: 750px; */
+    font-family: "Sour Gummy", serif;
+    font-size: larger;
+    align-self: center ;
+    
+}
+
+header, footer {
+    background-color: #101D42;
+    text-align: center;
+    /* height: 125px; */
+    display: grid;
+    place-content: center;
+    width: 1200px;
+    /* max-width: 1200px;
+    max-height: 750px; */
+    color: #fff;
+}
+
+main {
+    
+    /* height: 1000px; */
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    align-self: center;
+    background-color: #101D42;
+   
+}
+
+h1 {
+
+}
+
+h2{
+    font-family: "Sour Gummy", serif;
+}
+
+body {
+    font-family: "Montserrat", serif;
+    color: #333;
+    line-height: 1.5em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    /* display: flex; */
+    justify-content: center;
+    /* width: 900px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+article {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#nextButton {
+    margin: auto;
+    width: 200px;
+}
+
+
+form {
+    padding-left:  30px 10px;
+}
+input[type="text"]:focus {
+    border: 1px solid #D6D9DC;
+    outline: dashed gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+form input, form label {
+    display: block;
+}
+
+form input {
+    margin-bottom: 1em;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Provided to make smooth scroll work */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Move the z-index declaration to each of the
+different sections below to put that section on
+top so you can design it. */
+
+#introduction { background-color: rgb(240, 255, 255); z-index: 0;}
+#theForm { background-color: #101D42; z-index: 1;}
+#results { background-color: #101D42; z-index: 0;}
+#again { background-color: rgb(120, 255, 255); z-index: 0;}
+
+#introduction {
+    flex-direction: column;
+    text-align: center;
+}
+
+#theForm {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+#theForm h2, label {
+    color: #fff;
+}
+#results {
+    display: flex;
+}
+#results p {
+    color: #fff;
+
+}
+#results h2.PeaDogresults {
+    font-family: "Sour Gummy", serif;
+    color: #fff;
+    padding: 30px;
+    width: auto;
+}
+#results p.PeaDogresults {
+    background-color: #FFD2FC;
+    color: #101D42;
+    padding: 20px;
+    border-radius: 20px;
+    display: block;
+    max-width: 30%;
+}
+
+#again {
+
+}
+
+
+

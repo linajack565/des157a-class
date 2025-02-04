@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madlibs</title>
+
+    <!-- link to normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- link to external Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Sour+Gummy:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+
+
+    <!-- link to styles.css -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- link to JavaScript -->
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Critterscope</h1>
+    </header>
+    <main>
+        <section id="introduction">
+            <p>Welcome to Critterscope!</p>
+            <p>Let's find out which critter you are!</p>
+            <button id="nextButton">Take me to the magic</button>
+        </section>
+        <section id="theForm">
+            <h2>What's your Critterscope?</h2>
+            <form>
+                <label for="answer1">Your Name:</label>
+                <input type="text" id="answer1" required>
+
+                <label for="answer2">Noun, plural:</label>
+                <input type="text" id="answer2" required>
+
+                <label for="answer3">Noun, plural:</label>
+                <input type="text" id="answer3" required>
+
+                <label for="answer4">Choose one:</label>
+                <select name="critters" id="answer4" required>
+                    <option value="none">---</option>
+                    <option value="pea">giraffe</option>
+                    <option value="banana">cow</option>
+                    <option value="broccoli">cat</option>
+                    <option value="orange">mouse</option>
+                    <option value="cookie">bee</option>
+                    <option value="pineapple">dog</option>
+                </select>
+
+                <label for="answer5">Adjective, something positive:</label>
+                <input type="text" id="answer5" required>
+
+                <label for="answer5">Verb "-ing"</label>
+                <input type="text" id="answer5" required>
+
+                <label for="answer5">Noun, an emotion:</label>
+                <input type="text" id="answer5" required>
+
+                <label for="answer5">Plural noun:</label>
+                <input type="text" id="answer5" required>
+
+                <label for="answer5">Verb:</label>
+                <input type="text" id="answer5" required>
+
+                <label for="answer5">Adjective:</label>
+                <input type="text" id="answer5" required>
+
+                <input type="submit">
+                
+            </form>
+        </section>
+        <section id="results">
+            <h2 class="PeaDogresults">You are a Pea Dog.</h2>
+            <img src="images/PeaDog.png" alt="illustration of a Pea Dog">
+            <p class="PeaDogresults">
+                You are a being of NOUN 1 and warm energies, radiating NOUN 2 wherever you tread. Like a gentle NOUN 3 tickling the meadow, your presence VERB 4 those around you, drawing them close with an innate charm. Your curious and ADJ 5 nature is your gift, a reminder that NOUN 6 thrives in the smallest of moments. But beware, Broccoli Cow—your tender heart can sometimes tangle itself in the NOUN PLURAL 7 of others' troubles. Remember to VERB 8 when needed, for your magic is brightest when ADJ 9.
+            </p>
+        </section>
+            
+        <section id="again"></section>
+        
+
+    </main>
+   
+    
+</body>
+</html>
