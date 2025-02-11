@@ -32,67 +32,64 @@
             <button id="introButton">Take me to the magic</button>
             <!-- <img src="images/"  -->
         </section>
+
         <section id="theForm">
             <h2>What's your Critterscope?</h2>
-            <form>
-                <label for="answer1">Your Name:</label>
-                <input type="text" id="answer1" required>
+            <form id="myForm">
 
+                <label for="answer0">Your Name:</label>
+                <input type="text" id="answer0" required>
+
+                <label for="answer1">Noun, plural:</label>
+                <input type="text" id="answer1" required>
+                
                 <label for="answer2">Noun, plural:</label>
                 <input type="text" id="answer2" required>
 
-                <label for="answer3">Noun, plural:</label>
-                <input type="text" id="answer3" required>
-
-                <label for="answer4">Choose one:</label>
-                <select name="critters" id="answer4" required>
+                <label for="answer3">Choose one:</label>
+                <select name="critters" id="answer3" required>
                     <option value="nocritter">---</option>
-                    <option value="pea">giraffe</option>
-                    <option value="banana">cow</option>
-                    <option value="broccoli">cat</option>
-                    <option value="orange">mouse</option>
-                    <option value="cookie">bee</option>
-                    <option value="pineapple">dog</option>
+                    <option value="giraffe">giraffe</option>
+                    <option value="cow">cow</option>
+                    <option value="cat">cat</option>
+                    <option value="mouse">mouse</option>
+                    <option value="bee">bee</option>
+                    <option value="dog">dog</option>
                 </select>
 
-                <label for="answer6">Adjective, something positive:</label>
+                <label for="answer4">Adjective, something positive:</label>
+                <input type="text" id="answer4" required>
+
+                <label for="answer5">Verb "-ing"</label>
+                <input type="text" id="answer5" required>
+
+                <label for="answer6">Noun, an emotion:</label>
                 <input type="text" id="answer6" required>
 
-                <label for="answer7">Verb "-ing"</label>
+                <label for="answer7">Plural noun:</label>
                 <input type="text" id="answer7" required>
 
-                <label for="answer8">Noun, an emotion:</label>
+                <label for="answer8">Verb:</label>
                 <input type="text" id="answer8" required>
 
-                <label for="answer9">Plural noun:</label>
+                <label for="answer9">Adjective:</label>
                 <input type="text" id="answer9" required>
 
-                <label for="answer10">Verb:</label>
-                <input type="text" id="answer10" required>
-
-                <label for="answer11">Adjective:</label>
-                <input type="text" id="answer11" required>
-
-                <input type="submit">
-                
+                <input type="submit"> 
             </form>
         </section>
+        
         <section id="results">
             <div>
-                <h2 class="PeaDogresults">You are a Pea Dog.</h2>
+                <h2>You are a Pea Dog.</h2>
                 <img src="images/PeaDog.png" alt="illustration of a Pea Dog">
             </div>
             <div id="resultsWbutton">
-                <p class="PeaDogresults">
-                You are a being of NOUN 1 and warm energies, radiating NOUN 2 wherever you tread. Like a gentle NOUN 3 tickling the meadow, your presence VERB 4 those around you, drawing them close with an innate charm. Your curious and ADJ 5 nature is your gift, a reminder that NOUN 6 thrives in the smallest of moments. But beware, Broccoli Cow—your tender heart can sometimes tangle itself in the NOUN PLURAL 7 of others' troubles. Remember to VERB 8 when needed, for your magic is brightest when ADJ 9.
-                </p>
+                <!-- from glenda: p was not properly closed -->
+                <p class="madlib"></p>
                 <button id="wishAgain">Wish again</button>
             </div>
         </section>
-            
-        <section id="again"></section>
-        
-
     </main>
    
     
