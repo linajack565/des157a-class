@@ -36,7 +36,7 @@
         const answer8 = document.querySelector('#answer8').value;
         const answer9 = document.querySelector('#answer9').value;
         
-        const peaDog = `Hello, ${answer0}. You are a being of ${answer1} and warm energies, radiating ${answer2} wherever you tread. Like a gentle ${answer3} tickling the meadow, your presence ${answer4} those around you, drawing them close with an innate charm. Your curious and ${answer5} nature is your gift, a reminder that ${answer6} thrives in the smallest of moments. But beware, ${answer0}, your tender heart can sometimes tangle itself in the ${answer7} of others' troubles. Remember to ${answer8} when needed, for your magic is brightest when ${answer9}.`;
+        const peaDog = `Hello, ${answer0} You are a being of ${answer1} and warm energies, radiating ${answer2} wherever you tread. Like a gentle ${answer3} tickling the meadow, your presence ${answer4} those around you, drawing them close with an innate charm. Your curious and ${answer5} nature is your gift, a reminder that ${answer6} thrives in the smallest of moments. But beware, ${answer0}, your tender heart can sometimes tangle itself in the ${answer7} of others' troubles. Remember to ${answer8} when needed, for your magic is brightest when ${answer9}.`;
         madlib.innerHTML = peaDog;
         
     });
