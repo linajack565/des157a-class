@@ -1,0 +1,106 @@
+body {
+    font-family: "Montserrat", serif;
+    color: #333;
+}
+
+img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+/* Provided to make smooth scroll work */
+html {
+    scroll-behavior: smooth;
+}
+
+
+section {
+    /* background-color: aliceblue; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Move the z-index declaration to each of the
+different sections below to put that section on
+top so you can design it. */
+
+#DarkAlleyWay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#ItemPage {  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#FullImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+.clickableImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.itemImage {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+#overlayDemon, #overlayPaper, #overlayManeki, #overlayGlass, #overlayCastle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, .5);
+    transition-property: visibility, opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition: all .5s ease;
+}
+
+.overlayContent {
+    background-color: aliceblue;
+    color: #333;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50vw;
+    height: 60vh;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    /* transform: translate(-50%, -50%); */
+    overflow-y: scroll;
+    transform: translate(-50%, -50%); /* This centers it */
+    align-items: center;
+    border-radius: 20px;
+}

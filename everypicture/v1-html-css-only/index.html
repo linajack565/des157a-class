@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Picture CSS and HTML</title>
+
+    <!-- link to normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- link to external Google fonts -->
+
+
+    <!-- link to styles.css -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- link to JavaScript -->
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <main>
+        <!-- First screen will be a dark alley with an interactable door. Illustrated image. click on it to go to the next page.  -->
+        <section id="DarkAlleyWay">
+            <main>
+                <p>here is the introduction page</p>
+                <img src="#" alt="dark alley way illustration">
+            </main>
+        </section>
+
+        <!-- in the top left corner, instructions to interact with the objects. 
+         five interactable objects will fly in and the user can click on it. 
+         They will be photoshopped out and their own images.  
+         By clicking on the objects, an overlay will appear to show what that object represents. 
+         The full image will be hiding behind a solid color background and only appear when all the overlays have been opened.-->
+        <section id="ItemPage">
+            <p>Welcome in! Click on objects to learn more about them.</p>
+            <img src="images/restaurantdemon.png" class="clickableImage" alt="demon illustration">
+            <div id="demon"></div>
+            <p>Click <a href="#" class="openDemon">here</a> to open the overlay</p>
+                <article id="overlayDemon" class="hidden">
+                    <div class="overlayContent">
+                        <div class="contentText">
+                            <h2>Kabukicho</h2>
+                            <p>Here is a view of mt first night in Tokyo. Pictures may say a thousand words, but this picture doesn't capture the overwhelming amount of activity on one small street. You'll never be bored again.</p>
+                            <button class="closeDemon">close</button>
+                        </div>
+                        <img src="images/kabukicho.png" class="itemImage" alt="Kabukicho street">
+                </article>
+            <div id="paper"></div>
+            <img src="images/restaurantpaper.png" class="clickableImage" alt="paper cat">
+            <p>Click <a href="#" class="openPaper">here</a> to open the overlay</p>
+                <article id="overlayPaper" class="hidden">
+                    <div class="overlayContent">
+                        <div class="contentText">
+                            <h2>Pom Purin Cafe</h2>
+                            <p>Here is a view of mt first night in Tokyo. Pictures may say a thousand words, but this picture doesn't capture the overwhelming amount of activity on one small street. You'll never be bored again.</p>
+                            <button class="closePaper">close</button>
+                        </div>
+                        <img src="images/pom.png" class="itemImage" alt="parfaits">
+                </article>
+            <div id="maneki"></div>
+            <img src="images/restaurantmaneki.png" class="clickableImage" alt="ceramic cat">
+            <p>Click <a href="#" class="openManeki">here</a> to open the overlay</p>
+                <article id="overlayManeki" class="hidden">
+                    <div class="overlayContent">
+                        <div class="contentText">
+                            <h2>Cola Ceramic Art</h2>
+                            <p>Here is a view of mt first night in Tokyo. Pictures may say a thousand words, but this picture doesn't capture the overwhelming amount of activity on one small street. You'll never be bored again.</p>
+                            <button class="closeManeki">close</button>
+                        </div>
+                        <img src="images/ceramic.png" class="itemImage" alt="Ceramic Cola art">
+                </article>
+            <div id="glass"></div>
+            <img src="images/restaurantglass.png" class="clickableImage" alt="glass cup">
+            <p>Click <a href="#" class="openGlass">here</a> to open the overlay</p>
+                <article id="overlayGlass" class="hidden">
+                    <div class="overlayContent">
+                        <div class="contentText">
+                            <h2>Many Mirrors</h2>
+                            <p>Here is a view of mt first night in Tokyo. Pictures may say a thousand words, but this picture doesn't capture the overwhelming amount of activity on one small street. You'll never be bored again.</p>
+                            <button class="closeGlass">close</button>
+                        </div>
+                        <img src="images/mirrors.png" class="itemImage" alt="image of mirrors">
+                </article>
+            <div id="castle"></div>
+            <img src="images/restauranttemple.png" class="clickableImage" alt="photo of a temple">
+            <p>Click <a href="#" class="openCastle">here</a> to open the overlay</p>
+                <article id="overlayCastle" class="hidden">
+                    <div class="overlayContent">
+                        <div class="contentText">
+                            <h2>Temple</h2>
+                            <p>Here is a view of mt first night in Tokyo. Pictures may say a thousand words, but this picture doesn't capture the overwhelming amount of activity on one small street. You'll never be bored again.</p>
+                            <button class="closeCastle">close</button>
+                        </div>
+                        <img src="images/temple.png" class="itemImage" alt="image of a large temple">
+                </article>
+        </section>
+        
+        <!-- Once all objects have been clicked on, the full image of the restaurant will appear. 
+         The instruction box will change to say - "congrats, you finished your experience. Click on the objects again to re-read them" -->
+        <section id="FullImage">
+            <!-- <p>This is the full image page</p> -->
+            <img src="images/restaurant.jpg" alt="full restaurant image">
+        </section>
+    </main>
+   
+    
+</body>
+</html>
