@@ -1,0 +1,127 @@
+body {
+    font-family: "Montserrat", serif;
+    color: #333;
+}
+
+img {
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+#DarkAlleyWay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#ItemPage {  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#FullImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+.itemImage {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+ #demonArea {
+    z-index: 20;
+    /* background-color: rgba(255, 0, 0, 0.2);  */
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%;
+    height: 100%;  */
+    display: block;
+}
+
+#map {
+    position: absolute;
+} 
+
+#overlayDemon, #overlayPaper, #overlayManeki, #overlayGlass, #overlayCastle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, .5);
+    transition-property: visibility, opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition: all .5s ease;
+    z-index: 30;
+}
+
+.overlayContent {
+    background-color: aliceblue;
+    color: #333;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50vw;
+    height: 60vh;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    overflow-y: scroll;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    border-radius: 20px;
+}
+
+/* .clickableImage {
+    animation: Pulse 3s infinite ease-in-out;
+    
+}
+@keyframes Pulse {
+    0% {
+        transform:  translateY(0%) scale(1);
+    }
+    50% {
+        transform: translateY(-1%) scale(1.01);
+    }
+    100% {
+        transform: translateY(0%) scale(1);
+    }
+} */
