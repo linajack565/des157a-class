@@ -64,7 +64,7 @@ body {
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: auto;
     justify-content: space-around;
     align-items: center;
