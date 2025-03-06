@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On! CSS and HTML</title>
+
+    <!-- link to normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- link to external Google fonts -->
+
+
+    <!-- link to styles.css -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- link to JavaScript -->
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+<!-- <article>
+    <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p> 
+    <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+</article> -->
+<main>
+<header>
+<button id="quit">quit?</button>
+<div>
+    <h1>Snake Dinner</h1>
+    <h2>Mouse's Turn:</h2>
+</div>
+<div id="rules">
+    <p>i</p>
+</div>
+</header>
+
+
+<article>
+    <section id="BirdAndMouse">
+    <div id="BirdAndEgg">
+        <img class="img-width" id="bird" src="images/Bird.png" alt="bird illustration">
+        <img class="img-width" id="egg" src="images/Egg.png" alt="egg illustration">
+    </div>
+    <div id="MouseAndCheese">
+        <img class="img-width" id="mouse" src="images/Mouse.png" alt="mouse illustration">
+        <img class="img-width" id="cheese" src="images/Cheese.png" alt="cheese illustration">
+    </div>
+    </section> 
+    
+    
+<!-- <div id="gamecontrol">
+    <h2>Start a Game</h2>
+    <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+</div> -->
+
+<div id="game"></div>
+<div id="actions"></div>
+<div id="score"></div>
+   
+<button id="roll">ROLL</button>
+<button id="pass">pass...</button>
+</article>
+</main>
+
+</body>
+</html>

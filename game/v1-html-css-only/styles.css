@@ -1,0 +1,70 @@
+body {
+    padding: 0px;
+    line-height: 1.5em;
+    background-color: #FFF8C9;
+    /* background-image: url(images/SnakeBody.png); 
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+main {
+    background-image: url(images/SnakeBody.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1200px;
+    height: 750px;
+    padding: 20px;
+    border: 2px solid #FDE74C;
+    
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1200px; */
+    
+}
+
+#quit {
+    height: 50px;
+    width: 50px;
+}
+.img-width {
+    width: 100%;
+    min-width: 200px;
+    display: block;
+}
+#egg  {
+    margin-top: -150px;
+}
+#cheese  {
+    margin-top: -80px;
+}
+#mouse {
+    margin-top: 30px;
+}
+#BirdAndMouse {
+    display: flex;
+    justify-content: space-around;
+
+}
+#BirdAndEgg, #MouseAndCheese{
+    display: flex;
+    flex-direction: column;
+    gap: -50px;
+    
+    
+}
+img {
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
