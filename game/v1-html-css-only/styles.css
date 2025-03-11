@@ -17,13 +17,14 @@ main {
     padding: 20px;
     border: 2px solid #FDE74C;
     
+    
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* max-width: 1200px; */
-    
+    position: relative;
 }
 
 #quit {
@@ -52,10 +53,30 @@ header {
 #BirdAndEgg, #MouseAndCheese{
     display: flex;
     flex-direction: column;
-    gap: -50px;
+    gap: -50px; 
+}
+#rules {
     
     
 }
+#showRules {
+    position: absolute;
+    background-color: #FDE74C;
+    width: 20px;
+    height: 20px;
+    top: 0px;
+    right: 2%;
+    width: 50%;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+
 img {
     width: 100%;
 }
