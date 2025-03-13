@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On! CSS and HTML</title>
+
+    <!-- link to external Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Nunito&display=swap" rel="stylesheet">
+
+    <!-- link to normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- link to styles.css -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- link to JavaScript -->
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+
+<main>
+<header>
+    <button id="quit">quit?</button>
+
+    <div id="title">
+        <h1>Snake Dinner</h1>
+        <!-- <h2>Mouse's Turn:</h2> -->
+        
+    </div>
+
+    <div id="rulesButton">
+        <p>i</p>
+    </div>
+    
+</header>
+
+
+<article>
+    <div id="game"></div>
+    <section id="BirdAndMouse">
+    <div id="BirdAndEgg">
+        <img class="img-width" id="bird" src="images/Bird.png" alt="bird illustration">
+        <img class="img-width" id="egg" src="images/Egg.png" alt="egg illustration">
+    </div>
+    <div id="MouseAndCheese">
+        <img class="img-width" id="mouse" src="images/Mouse.png" alt="mouse illustration">
+        <img class="img-width" id="cheese" src="images/Cheese.png" alt="cheese illustration">
+    </div>
+    
+    <p id="birdScore">0</p>
+    <p id="mouseScore">0</p>
+    </section> 
+
+
+<div id="actions"></div>
+<div id="score"></div>
+
+<div id="buttons">   
+    <button id="start">START</button>
+</div>
+</article>
+
+<p id="rules"></p>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+body {
+    padding: 0px;
+    line-height: 1.5em;
+    background-color: #FFF8C9;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+main {
+    background-image: url(images/SnakeBody.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1200px;
+    height: 750px;
+    border: 2px solid #FDE74C;  
+    position: relative;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+h1{
+    font-size: 72px;
+    font-family: "Jaro", sans-serif;
+    font-weight: 400;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#title {
+    text-align: center;
+    align-self: center;
+}
+section {
+    position: relative;
+}
+#birdScore {
+    position: absolute;
+    top: 50%;
+    left:24%;
+    font-size: 72px;
+    font-family: "Jaro", sans-serif;
+    font-weight: 400;
+}
+#mouseScore {
+    position: absolute;
+    top: 40%;
+    right: 22%;
+    font-size: 72px;
+    font-family: "Jaro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#quit {
+    height: 65px;
+    width: 130px;
+    border-radius: 40px;
+    rotate: -20deg;
+    margin: 20px;
+    border: none;
+    background-color: #E55934;
+    color: white;
+    font-family: "Jaro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;    
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+#quit:hover{
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); 
+}
+#quit:active {
+    box-shadow: none;
+}
+#start {
+    border: 1px solid;   
+    width: 200px;
+    height: 85px;
+    color: white;
+    font-family: "Jaro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;  
+    background-color: #9BC53D;
+    border-color: #FDE74C;
+    border-radius: 20px;
+    border-width: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.img-width {
+    width: 100%;
+    min-width: 200px;
+    display: block;
+}
+#egg  {
+    margin-top: -150px;
+}
+#cheese  {
+    margin-top: -80px;
+}
+#mouse {
+    margin-top: 30px;
+}
+#BirdAndMouse {
+    display: flex;
+    justify-content: space-around;
+}
+#BirdAndEgg, #MouseAndCheese{
+    display: flex;
+    flex-direction: column;
+    gap: -50px; 
+}
+#rulesButton {
+    background-color: white;
+    color: #5BC0EB;
+    width: 40px;
+    height: 40px; 
+    font-family: "Jaro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 20px;
+}
+#rules {
+    display: none;
+    position: absolute;
+    width: 50%;
+    top: 0px;
+    right: 2%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+#roll {
+    border: 1px solid;   
+    width: 200px;
+    height: 85px;
+    color: white;
+    font-family: "Jaro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;  
+    background-color: #FA7921;
+    border-color: #FDE74C;
+    border-radius: 20px;
+    border-width: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+#roll:hover{
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); 
+}
+#roll:active {
+    box-shadow: none;
+}
+#rollAgain {
+    border: 1px solid;   
+    width: 200px;
+    height: 85px;
+    color: white;
+    font-family: "Jaro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;  
+    background-color: #FA7921;
+    border-color: #FDE74C;
+    border-radius: 20px;
+    border-width: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+#pass {
+    width: 150px;
+    height: 60px;
+    color: white;
+    font-family: "Jaro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;  
+    background-color: #5BC0EB;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+#pass:hover{
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); 
+}
+#pass:active {
+    box-shadow: none;
+}
+img {
+    width: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+.die {
+    width: 70px;
+}
+#game {
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#actions, #score {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bText{
+    font-size: 20px;
+  }
+  
+
+
+
+
